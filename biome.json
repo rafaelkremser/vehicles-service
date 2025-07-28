@@ -1,0 +1,38 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.1.2/schema.json",
+  "extends": ["ultracite"],
+  "javascript": {
+    "formatter": {
+      "semicolons": "asNeeded"
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    }
+  },
+  "linter": {
+    "rules": {
+      "style": {
+        "noParameterProperties": "off",
+        "useConsistentMemberAccessibility": "off",
+        "useImportType": "off"
+      },
+      "suspicious": {
+        "useAwait": "off"
+      },
+      "nursery": {
+        "useNumericSeparators": "off",
+        "noAwaitInLoop": "off",
+        "noShadow": "off"
+      },
+      "correctness": {
+        "noUnusedFunctionParameters": "off"
+      },
+      "complexity": {
+        "noStaticOnlyClass": "off"
+      },
+      "performance": {
+        "noNamespaceImport": "off"
+      }
+    }
+  }
+}

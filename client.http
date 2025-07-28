@@ -1,0 +1,63 @@
+### Base URL da API
+@baseUrl = http://localhost:3333
+
+### Variáveis de exemplo para testes
+@licensePlate = "ABC1234"
+@updatedLicensePlate = "XYZ0000"
+
+## Substitua o valor abaixo pelo ID real do veículo retornado na criação
+@vehicleId = "VEHICLE_ID_AQUI" 
+
+###
+
+# @name create_vehicle
+# Cria um novo veículo com os dados fornecidos
+POST {{baseUrl}}/vehicles
+Content-Type: application/json
+
+{
+  "licensePlate": {{licensePlate}},
+  "chassisNumber": "1HGCM82633A123456",
+  "renavam": "12345678901",
+  "model": "Civic",
+  "brand": "Honda",
+  "year": 2020
+}
+
+###
+
+# @name fetch_recent_vehicles
+# Retorna uma lista dos veículos mais recentes
+GET {{baseUrl}}/vehicles
+Content-Type: application/json
+
+###
+
+# @name get_vehicle_by_license_plate
+# Busca um veículo pelo número da placa
+GET {{baseUrl}}/vehicles/{{licensePlate}}
+Content-Type: application/json
+
+###
+
+# @name edit_vehicle
+# Atualiza os dados de um veículo existente
+# Substitua {{vehicleId}} pelo ID real do veículo
+PUT {{baseUrl}}/vehicles/{{vehicleId}}
+Content-Type: application/json
+
+{
+  "licensePlate": {{updatedLicensePlate}},
+  "chassisNumber": "1HGCM826000000000",
+  "renavam": "12345600000",
+  "model": "Corolla",
+  "brand": "Toyota",
+  "year": 2022
+}
+
+###
+
+# @name delete_vehicle
+# Deleta um veículo com base no ID fornecido
+DELETE {{baseUrl}}/vehicles/{{vehicleId}}
+Content-Type: application/json
