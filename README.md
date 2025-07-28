@@ -1,6 +1,20 @@
 # Vehicles Service API
 
 API for vehicle registration and management, built with NestJS, Prisma, and TypeScript.
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" height="40" alt="nestjs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" height="40" alt="jest logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" height="40" alt="docker logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" height="40" alt="prisma logo"  />
+  <img width="12" />
+</div>
 
 ---
 
@@ -50,7 +64,7 @@ npm install
 Create a `.env` file based on `.env.example` and update with your database connection string:
 
 ```env
-DATABASE_URL=postgresql://user:password@localhost:5432/vehicles_db
+DATABASE_URL=postgresql://docker:docker@localhost:5432/vehicles-service
 PORT=3333
 ```
 
